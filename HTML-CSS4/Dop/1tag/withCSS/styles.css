@@ -1,0 +1,40 @@
+div {
+    width: 550px;
+    height: 298px;
+
+    background-image:
+        url('images/topLeft.png'),
+        url('images/bottomLeft.png'),
+        url('images/topRight.png'),
+        url('images/bottomRight.png'),
+        url('images/vertical.png'),
+        url('images/vertical.png'),
+        url('images/horizon.png'),
+        url('images/horizon.png');
+
+    background-position: 
+        left top,
+        left bottom,
+        right top,
+        right bottom,
+        left,
+        right,
+        top,
+        bottom;
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        repeat-y,
+        repeat-y,
+        repeat-x,
+        repeat-x;
+}
+
+p{
+    padding: 45px;
+    text-align: center;
+    font-size: 22px;
+}
