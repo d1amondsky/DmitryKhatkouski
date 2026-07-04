@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>разные виды менб</title>
+    <style>
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            display: inline-block;
+            color: blue;
+        }
+
+        /* стиль для ссылок */
+        .menu-inline a, .menu-float a, .menu-table a, .menu-spaces a, .menu-old-table a {
+            text-decoration: underline;
+            color: green;
+            padding: 5px 15px;
+            font-size: 16px;
+        }
+
+        /* ховер для ссылок */
+        .menu-inline a:hover, .menu-float a:hover, .menu-table a:hover, .menu-spaces a:hover, .menu-old-table a:hover {
+            color: red;
+        }
+
+        /* inline-block */
+        .menu-inline a {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .menu-inline a:not(:last-child) {
+            border-right: 2px solid red;
+        }
+
+        /* float */
+        .menu-float {
+            overflow: hidden;
+        }
+        
+        .menu-float a {
+            float: left;
+            display: block;
+        }
+
+        .menu-float a:not(:last-child) {
+            border-right: 2px solid red;
+        }
+
+        /* display:table */
+        .menu-table {
+            display: table;
+        }
+        .menu-table a {
+            display: table-cell;
+            text-align: center;
+        }
+        .menu-table a:not(:last-child) {
+            border-right: 2px solid red;
+        }
+
+        /* inline+symbol */
+        .menu-spaces a {
+            display: inline;
+            padding: 0 10px;
+        }
+        .menu-spaces span {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* old-table */
+        .menu-old-table {
+            border-collapse: collapse;
+        }
+        .menu-old-table td {
+            padding: 5px 15px;
+        }
+        .menu-old-table td:not(:last-child) {
+            border-right: 2px solid red;
+        }
+        .menu-old-table a {
+            text-decoration: underline;
+            color: green;
+        }
+        .menu-old-table a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>1. Inline-block</h2>
+        <div class="menu-inline">
+            <a href="#">первая ссылка</a>
+            <a href="#">вторая ссылка</a>
+            <a href="#">третья ссылка</a>
+            <a href="#">четвёртая ссылка</a>
+            <a href="#">пятая ссылка</a>
+        </div>
+    </div>
+
+    <div>
+        <h2>2. Float</h2>
+        <div class="menu-float">
+            <a href="#">первая ссылка</a>
+            <a href="#">вторая ссылка</a>
+            <a href="#">третья ссылка</a>
+            <a href="#">четвёртая ссылка</a>
+            <a href="#">пятая ссылка</a>
+        </div>
+    </div>
+
+    <div>
+        <h2>3. Display: table</h2>
+        <div class="menu-table">
+            <a href="#">первая ссылка</a>
+            <a href="#">вторая ссылка</a>
+            <a href="#">третья ссылка</a>
+            <a href="#">четвёртая ссылка</a>
+            <a href="#">пятая ссылка</a>
+        </div>
+    </div>
+
+    <div>
+        <h2>5. Inline + спецсимвол (|)</h2>
+        <div class="menu-spaces">
+            <a href="#">первая ссылка</a><span>|</span>
+            <a href="#">вторая ссылка</a><span>|</span>
+            <a href="#">третья ссылка</a><span>|</span>
+            <a href="#">четвёртая ссылка</a><span>|</span>
+            <a href="#">пятая ссылка</a>
+        </div>
+    </div>
+
+    <div>
+        <h2>6. HTML-таблица (&lt;table&gt;)</h2>
+        <table class="menu-old-table">
+            <tr>
+                <td><a href="#">первая ссылка</a></td>
+                <td><a href="#">вторая ссылка</a></td>
+                <td><a href="#">третья ссылка</a></td>
+                <td><a href="#">четвёртая ссылка</a></td>
+                <td><a href="#">пятая ссылка</a></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

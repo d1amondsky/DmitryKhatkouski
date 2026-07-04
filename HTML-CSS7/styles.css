@@ -1,0 +1,92 @@
+ body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header, .footer {
+            background-color: dodgerblue;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        .main-wrapper {
+            background-image: url(/DmitryKhatkouski/HTML-CSS5/DZ/images/back_gold.gif);
+            background-position: left;
+            background-repeat: repeat-y;
+        }
+
+        .sidebar {
+            background-color: gold;
+            width: 153px;
+            float: left; 
+            box-sizing: border-box;
+            padding-bottom: 20px;
+        }
+        
+        .sidebar p {
+            text-align: center;
+        }
+
+        .sidebar ul {
+            padding-left: 25px;
+            margin: 0;
+            list-style-type: disc;
+        }
+
+        .content {
+            margin-left: 153px; 
+            background-image: url(/DmitryKhatkouski/HTML-CSS5/DZ/images/a_ball.gif);
+            background-position: right top;
+            background-repeat: repeat-y;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .content-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .content-img {
+            padding: 3px;
+            float: left;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        /* переход на ожну строку при 640 */
+        @media (max-width: 640px) {
+            .main-wrapper {
+                background-image: none; 
+            }
+
+            .sidebar {
+                float: none; 
+                width: 100%; 
+                padding: 15px;
+            }
+
+            .sidebar ul {
+                padding-left: 20px;
+            }
+
+            .content {
+                margin-left: 0; 
+                background-image: none; 
+                text-align: justify;
+            }
+
+            .content-img {
+                float: none;
+                display: block;
+                margin: 0 auto 15px auto;
+            }
+        }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Stars</title>
+    <style>
+        .rating {
+            display: inline-block;
+            direction: rtl; 
+        }
+
+        .rating img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            content: url('/DmitryKhatkouski/HTML-CSS6/Stars/images/star0.png');
+        }
+
+        .rating img:hover,
+        .rating img:hover ~ img {
+            content: url('/DmitryKhatkouski/HTML-CSS6/Stars/images/star1.png');
+        }
+    </style>
+</head>
+<body>
+
+    <div class="rating">
+        <img src="images/star0.png" alt="">
+        <img src="images/star0.png" alt="">
+        <img src="images/star0.png" alt="">
+        <img src="images/star0.png" alt="">
+        <img src="images/star0.png" alt="">
+    </div>
+
+</body>
+</html>
