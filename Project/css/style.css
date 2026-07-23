@@ -1,678 +1,238 @@
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* Замените 'fireplace-bg.jpg' на реальный путь к вашей фоновой картинке интерьера */
+  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 100%), 
+              url('fireplace-bg.jpg') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
-.island-moments-regular {
-  font-family: "Island Moments", cursive;
-  font-weight: 400;
-  font-style: normal;
+/* Шапка сайта */
+.navbar {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
-* {
-background: #fff;
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.clear {
-  clear: both;
-  /* background-color: black; */
-  /* height: 2px; */
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background: #fff;
-}
-
-.button1 {
-  display: inline-block;
-  background-color: #FAA935;
-  color: white;
-  border-radius: 50px;
-  font-weight: 600;
-  width: 120px;
-  height: 42px;
-  text-decoration: none;
+/* Стилизация логотипа */
+.logo-box {
+  background-color: #d97706; /* Оранжево-золотой фон из макета */
+  padding: 15px 20px;
   text-align: center;
-  line-height: 42px;
-}
-
-.button1:hover {
-  background-color: #FF7E01;
-}
-
-.button2 {
-  display: inline-block;
-  background-color: #fff;
-  color: #0B2727;
-  border-radius: 50px;
-  font-weight: 600;
-  width: 95px;
-  height: 42px;
   text-decoration: none;
-  text-align: center;
-  line-height: 42px;
+  color: #fff;
+  font-weight: bold;
 }
 
-.button2:hover {
-  color: #FAA935;
+.logo-title {
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
-.container {
-    width: 1120px;
-    margin: 0 auto;
+.logo-title .delta {
+  color: #fff;
 }
 
-.container1 {
-    width: 1120px;
-    margin: 100px auto auto auto;    
-}
-
-.container2 {
-    width: 1120px;
-    margin: 107px auto auto auto;    
-}
-
-.header {
-    overflow: hidden;
-    /* background: red; */
-    height: 85px;
-}
-
-.logo {
-    float: left;
-    height: 76px;
-    width: 255px;
-    margin-top: 5px;
-}
-
-.button-register {
-    float: right;
-    margin-top: 22px;
-    overflow: hidden;
-}
-
-.button-login {
-    float: right;
-    margin-top: 22px;
-}
-
-.menu {
-  float: right;
-  margin-top: 36px;
-  margin-right: 38px;
-}
-
-nav a {
-  color: #0B2727;
-  text-decoration: none;
-  margin-left: 30px;
-  font-weight: 600;
-}
-
-nav a.active {
-  color: #FAA935;
-  font-weight: 600;
-}
-
-.main {
-  /* height: 643px; */
-   min-height: 643px;
-  overflow: hidden;
-  /* background: aqua; */
-}
-
-.main-text {
-  width: 542px;
-  /* height: 263px; */
-  margin-top: 147px;
-  overflow: hidden;
-  float: left;
-}
-
-.main-know {
-  width: 239px;
-  /* height: 45px; */
-  float: left;
-}
-
-.p-know { 
-  font-family: "Island Moments", cursive;
-  font-size: 27px;
-  border-style: none;
-  background-color: #FAA935;
-  border-radius: 50px;
-  width: 194px;
-  height: 35px;
-  text-align: center;
-  line-height: 35px;
-  float: left;
+.logo-subtitle {
+  font-size: 9px;
+  letter-spacing: 1px;
   margin-top: 5px;
+  font-weight: 300;
 }
 
-.world1 { 
+/* Навигационное меню */
+.nav-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links, .sub-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Подменю (категории) */
+.sub-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.sub-links .arrow {
+  font-size: 8px;
+  margin-left: 4px;
+  color: #aaa;
+}
+
+/* Избранное и правые элементы */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.favorites-link {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.icon-placeholder {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Центральный текстовый контент */
+.hero-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-top: 140px; /* Чтобы контент не перекрывался шапкой */
+}
+
+.content-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+}
+
+/* Стилизация заголовков и разрядка букв (как на скриншоте) */
+.hero-title {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+  word-spacing: 8px;
+}
+
+.hero-title .gold-text {
+  font-weight: 300;
+  color: #ccc; /* Имитация тонкого шрифта "под ключ" */
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #ddd;
+  margin-bottom: 60px;
+}
+
+.hero-slogan {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/* Кнопки переключения слайдера */
+.slider-arrows {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.arrow-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
   width: 45px;
   height: 45px;
-}
-
-h2 {
-  width: 510px;
-  height: 88px;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-}
-
-.memories {
-  color: #FAA935;
-}
-
-.textUnderH1 {  
-  color: #6E7074;
-  width: 542px;
-  font-size: 16px;
-  margin-top: 30px;
-}
-
-.search {
-width: 808px;
-height: 76px;
-border-style: solid;
-border-width: 1px;
-border-radius: 50px;
-border-color: rgb(189, 187, 187) ;
-}
-
-.search-inside {
-  float: left;
-}
-
-.imgLoc {
-  float: left;
-  margin-left: 40px;
-  margin-top: 28px;
-}
-
-.imgDist {
-  float: left;
-  margin-left: 47px;
-  margin-top: 28px;
-}
-
-.imgMaxPeople {
-  float: left;
-  margin-left: 47px;
-  margin-top: 28px;
-}
-
-.inside-search-text {
-  border-right: 3px solid #ddd;
-  margin-top: 21px;
-  margin-left: 72px;
-  width: 198px;
-}
-
-.inside-search-text1 {
-  border-right: 3px solid #ddd;
-  margin-top: 21px;
-  margin-left: 79px;
-  width: 141px;
-}
-
-.inside-search-text2 {
-  margin-top: 21px;
-  margin-left: 79px;
-}
-
-.search-text1 {
-  color: #0B2727;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.search-text2 {
-  color: #6E7074;
-  font-weight: 500;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.search-button {
-  float: right;
-  margin-top: 15px;
-  margin-right: 26px;
-}
-
-.images{
- float: right;
-}
-
-.images img {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.pic1 {
-  margin-top: 110px;
-  margin-left: 25px;
-}
-
-.video {
-  margin-top: 130px;
-  margin-left: 21px;
-}
-
-.pic2 {
-  margin-top: 150px;
-  margin-left: 21px;
-}
-
-.services {
-  margin-top: 62px;
-}
-
-.serve {
-  width: 281px;
-  height: 125px;
-  float: left;
-}
-
-.p-serve1 {
-  font-family: "Island Moments", cursive;
-  font-weight: 400;
-  font-size: 32px;
-  color: #EE6E6E;
-}
-
-.p-serve2 {
-  font-weight: 500;
-  font-size: 32px;
-  color: #0B2727;
-}
-
-.offer {
-float: left;
-margin-left: 4px;
-}
-
-.service-offer {
-  width: 262px;
-  height: 182px;
-  float: left;
-  border-right: 1px solid #FAA935;
-  border-bottom: 1px solid #FAA935;
-  border-radius: 16px;
-  margin-left: 15px;
-  }
-
-.p-offer1 {
-  font-weight: 500;
-  font-size: 18px;
-  color: #000;
-  margin-top: 25px;
-  margin-left: 20px;
-}
-
-.p-offer2 {
-  font-weight: 400;
-  font-size: 12px;
-  color: #6E7074;
-  margin-top: 5px;
-  margin-left: 20px;
-}
-
-.service-offer img {
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.main-tour-text {
-  height: 108px;
-  margin-top: 110px;
-}
-
-.explore { 
-  font-family: "Island Moments", cursive;
-  font-size: 27px;
-  border-style: none;
-  background-color: #FAA935;
-  border-radius: 50px;
-  width: 84px;
-  height: 35px;
-  text-align: center;
-  line-height: 35px;
-} 
-
-h1 {
-font-weight: 500;
-font-size: 25px;
-}
-
-.main-tour-images1 {
-  float: left;
-  width: 267px;
-  height: 548px;
-  margin-right: 13px;
-}
-
-.main-tour-images2 {
-  float: left;
-  width: 267px;
-  /* height: 548px; */
-  margin-right: 10px;
-}
-
-.main-tour-images3 img {
-  vertical-align: top;
-}
-
-.Dubai, .Phetchaburi, .Wuxi {
-  margin-top: 14px;
-}
-
-.Paris {
-  margin-top: 14px;
-  margin-right: 12px;
-}
-
-/* .experience {
-  background-color: yellow;
-  height: 3000px;
-} */
-
-.experience-p { 
-  font-family: "Island Moments", cursive;
-  font-size: 27px;
-  border-style: none;
-  background-color: #FAA935;
-  border-radius: 50px;
-  width: 98px;
-  height: 35px;
-  text-align: center;
-  line-height: 35px;
-} 
-
-.experience-text {
-  float: left;
-  width: 571px;
-  margin-right: 58px;
-}
-
-.first-text {
-  width: 377px;
-}
-
-.second-text {
-  width: 571px;
-  margin-top: 10px;
-}
-
-.second-text-p {
-  font-weight: 500;
-  font-size: 20px;
-  color: #6E7074;
-}
-
-.tripclientyear {
-  margin-top: 30px;
-}
-
-.tripclientyear p {
-  margin-top: 10px;
-  font-weight: 500;
-  font-size: 13px;
-  color: #6E7074;
-}
-
-.succ-trip1 {
-  margin-left: 13px;
-}
-
-.succ-trip2 {
-  margin-left: 14px;
-}
-
-.succ-trip3 {
-  margin-left: 17px;
-}
-
-.tripclientyear div {
-  float: left;
-  /* width: 97px; */
-  height: 96px;
-  margin-right: 50px;
-}
-
-.s-trip1 {
-  float: left;
-  width: 97px;
-  height: 96px;
-  margin-left: 50px;
-}
-
-.s-trip2 {
-  float: left;
-  width: 99px;
-  height: 96px;
-  margin-left: 50px;
-}
-
-.s-trip3 {
-  float: left;
-  width: 105px;
-  height: 96px;
-  margin-left: 50px;
-}
-
-.tripclientyear div:last-child {
-  margin-right: 0px;
-}
-
-/* .gallery {
-  background-color: yellow;
-  height: 1500px;
-} */
-
-.gallery-div {
-  margin-top: 10px;
-  width: 397px;
-}
-
-.gallery-p { 
-  font-family: "Island Moments", cursive;
-  font-size: 27px;
-  border-style: none;
-  background-color: #FAA935;
-  border-radius: 50px;
-  width: 80px;
-  height: 35px;
-  text-align: center;
-  line-height: 35px;
-} 
-
-.p-gallery-2 {
-  font-weight: 500;
-  font-size: 25px;
-}
-
-.tour1 {
-  width: 267px;
-  margin-right: 13px;
-  float: left;
-}
-
-.img-tour-top {
-  margin-bottom: 13px;
-}
-
-.gallery-images div:last-child {
-  margin-right: 0px;
-}
-
-.gallery-images {
-  margin-top: 33px;
-}
-
-.fans-love {
-  /* background-color: yellow; */
-  /* height: 467px; */
-  overflow: hidden;
-}
-
-.fans-text {
-  width: 1120px;
-}
-
-.fans-p { 
-  font-family: "Island Moments", cursive;
-  font-size: 27px;
-  border-style: none;
-  background-color: #FAA935;
-  border-radius: 50px;
-  width: 90px;
-  height: 31px;
-  text-align: center;
-  line-height: 31px;
-} 
-
-.fans-feedback1 {
-  float: left;
-  width: 343px;
-  height: 191px;
-  margin-right: 45px;
-  margin-top: 33px;
-}
-
-.fans-feedback1:last-child {
-  margin-right: 0px;
-}
-
-.fans-feedback-text1 {
-  font-weight: 400;
-  font-size: 15px;
-  color: #6E7074;
-}
-
-.fans-photo-name {
-  width: 204px;
-  /* height: 63px; */
-  margin-top: 20px;
-  overflow: hidden;
-  float: left;
-}
-
-.fan-photo {
-  float: left;
-}
-
-.fans-name {
-  margin-top: 9px;
-  margin-left: 115px;
-}
-
-.fans-name1 {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.customer {
-  margin-top: 5px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #6E7074;
-}
-
-.drops1 {
-  margin-left: 499px;
-  margin-top: 50px;
-}
-
-.drop {
-  float: left;
-  margin-left: 30px;
-}
-
-.drop div:last-child {
-  margin-right: 0px;
-}
-
-.subscribe {
-  background: #CAE5F4;
-  overflow: hidden;
-  margin-top: 50px;
-}
-
-.container3 {
-    width: 1120px;
-    margin: 0 auto;
-    background: #CAE5F4;
-}
-
-.sub-left {
-  width: 570px;
-  height: 364px;
-  margin-right: 4px;
-  background: #CAE5F4;
-  float: left;
-}
-
-.sub-text1 {
-  margin-top: 58px;
-  font-weight: 500;
-  font-size: 28px;
-  background: #CAE5F4;
-}
-
-.subscribe-container {
-  border: 1px solid #FFFFFF;
-  border-radius: 8px;
-  padding: 5px;
-  background: #fff;
-  max-width: 544px;
-  margin-top: 30px;
-}
-
-.email-input {
-  display: inline-block;
-  border: none;
-  outline: none;
-  width: calc(100% - 120px);
-  padding: 10px;
-  vertical-align: middle;
-  box-sizing: border-box;
-}
-
-.subscribe-btn {
-  display: inline-block;
-  width: 113px;
-  height: 43px;
-  background-color: #FAA935;
-  color: white;
-  border: none;
-  padding: 10px 0;
-  border-radius: 6px;
+  border-radius: 50%;
   cursor: pointer;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
 }
 
-.sub-text2 {
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: 15px;
-  background: #CAE5F4;
+.arrow-btn:hover {
+  background: #fff;
+  color: #111;
+  border-color: #fff;
 }
 
-.sub-right {
-  background: #CAE5F4;
-  width: auto;
-  float: right;
+/* Точки пагинации */
+.slider-dots {
+  display: flex;
+  gap: 10px;
 }
 
-.sub-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #CAE5F4;
+.dot {
+  width: 30px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: #fff;
+}
+
+/* Простая адаптивность для мобильных экранов */
+@media (max-width: 992px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .nav-links, .sub-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .hero-title {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  .hero-slogan {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
 }
