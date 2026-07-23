@@ -263,7 +263,7 @@ header {
     width: 100%;
     max-width: 1405px;
     height: 651px;
-    background-image: url('/final_maket/images/pic1.png');
+    background-image: url('../images/pic1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -280,7 +280,7 @@ header {
     width: 100%;
     max-width: 1405px;
     height: 651px;
-    background-image: url('/final_maket/images/pic2.png');
+    background-image: url('../images/pic2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -347,7 +347,7 @@ header {
 }
 
 .ex1 {
-    background: url(/final_maket/images/ex1.png);
+    background: url('../images/ex1.png');
     background-size: cover;
     background-position: center;
     float: left;
@@ -358,7 +358,7 @@ header {
 }
 
 .ex2 {
-    background: url(/final_maket/images/ex2.png);
+    background: url('../images/ex2.png');
     background-size: cover;
     background-position: center;
     margin-top: 71px;
@@ -370,7 +370,7 @@ header {
 }
 
 .ex4 {
-    background: url(/final_maket/images/ex4.png);
+    background: url('../images/ex4.png');
     background-size: cover;
     background-position: center;
     margin-top: 53px;
@@ -381,7 +381,7 @@ header {
 }
 
 .ex3 {
-    background: url(/final_maket/images/ex3.png);
+    background: url('../images/ex3.png');
     background-size: cover;
     background-position: center;
     float: right;
@@ -539,7 +539,7 @@ header {
 }
 
 .collage-container {
-    background-image: url(/final_maket/images/back_collage.png);
+    background-image: url('../images/back_collage.png');
     background-repeat: no-repeat;
     background-position: bottom right;
     max-width: 1400px;
@@ -748,7 +748,7 @@ header {
     position: relative;
     background-color: #1b1b19;
     border-radius: 6px;
-    background-image: url('/final_maket/images/triangle-big.jpg');
+    background-image: url('../images/triangle-big.jpg');
     background-repeat: no-repeat;
     background-position: right 60px top 295px;
     background-size: auto 60%;
