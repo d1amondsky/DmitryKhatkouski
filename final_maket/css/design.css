@@ -341,7 +341,7 @@ header {
     margin: 100px auto 0;
     width: 1269px;
     height: 600px;
-    background-image: url(../images/back_design.png);
+    background-image: url("../images/back_design.png");
 }
 
 .inside-delaem {
